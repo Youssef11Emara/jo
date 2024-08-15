@@ -1,0 +1,423 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+header{
+    background-color: #1a1a1a;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 200px;
+    
+}
+
+header .title{
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #ff7300;
+    letter-spacing: 1px;
+}
+nav a{
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #ff7300;
+    padding-right: 20px;
+    transition: .7s ease;
+    position: relative;
+    animation: nav 2s infinite;
+}
+@keyframes nav {
+    0% {
+        color: #ff7300;
+    }
+    50% {
+        color: yellow;
+    }
+    100% {
+        color: #ff7300;
+    }
+}
+nav a:hover{
+    color: yellow; 
+}
+section{
+    padding: 170px 80px;
+}
+.main{
+    background: url(img/gsmarena_003.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.main span{
+    display: inline-block;
+    margin-bottom: 50px;
+    color: yellow;
+    font-size: 3em;
+    font-weight: 600;
+}
+.main h2{
+    font-size: 1.7em;
+    margin-bottom: 30px;
+}
+.main .btn{
+    flex-wrap: wrap;
+    display: inline-block;
+    margin: 0 20px;
+    width: 225px;
+    height: 50px;
+    background-color: #1a1a1a;
+    color: yellow;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    position: relative;
+    animation: moveUpDown 2s infinite;
+}
+@keyframes moveUpDown {
+    0% {
+        top: 0;
+    }
+    50% {
+        border-radius: 10px;
+        background-color: yellow ;
+        color: #1a1a1a;
+        top: 20px;
+    }
+    100% {
+        top: 0;
+    }
+}
+.main .btn:hover{
+    animation-play-state: paused;
+    transform: scale(1.1);
+    color: #1a1a1a;
+    background-color: yellow;
+}
+.main u{
+    color: yellow;
+}
+.main-2{
+    height: 100vh;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    padding-top: 20px;
+    text-align: center;
+    color: #ff7300;
+    font-size: 2.5em;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+}
+.main-2 div .card{
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    min-width: 480px;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+    color: white;
+    transition: 0.4s ease;
+}
+.main-2 div .card:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: #1a1a1a;
+}
+.main-3{
+    
+    background-color: black;
+}
+.main-3 ul li {
+    color: white;
+    padding-bottom: 20px;
+    list-style: 2px;
+}
+.main-4{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main-4 .content ol{
+    padding-right: 50px;
+    text-align: center;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+.main-4 .content ol li{
+    width: 900px;
+    height: 50px;
+    background-color: rgb(112, 0, 0);
+    margin: 10px 20px;
+    
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+    transition: 0.7s ease;
+}
+.main-4 .content ol li:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: #1a1a1a;
+}
+iframe{
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    height: 310px;
+    border-radius: 25px;
+    box-shadow: 0 2.5px 15px white;
+    transition: .5s ease;
+}
+iframe:hover{
+    scale: 1.1;
+    box-sizing: 10px;
+}
+.mian-5{
+    background-color: black;
+}
+.content-vid{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+.footer{
+    background-color: #1a1a1a;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title samp{
+    color: #ff7300;
+}
+
+.footer a{
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+@media (max-width:1024px) {
+    header{
+        padding: 30px 50px;
+    }
+
+    section{
+        padding: 50px 60px ;
+    }
+    .content{
+        margin: 60px 55px;
+    }
+    .main-2 div .card{
+        padding: 10px 10px;
+        height: 50px;
+        width: 320px;
+        background-color: #1a1a1a;  
+    }
+    body{
+        font-size: 20px;
+    }
+    .content{
+        align-items: center;
+        justify-content: center;
+    }
+    .main{
+        background-image: url(img/gsmarena_006.jpg);
+    }
+    iframe{
+        width: 330px;
+        height: 180px;
+    }
+    .main-4 .content ol li{
+        padding-top: 10px;
+        width: 660px;
+        height: 50px;
+        margin: 10px 15px;
+    }
+    .main .btn{
+
+        margin: 50px 0px;
+        width: 350px;
+        height: 70px;
+        padding-top: 19px;
+        font-size: 1.2em;
+    }
+    .main span{
+        margin-bottom: 25px;
+    }
+}
+
+
+@media (max-width:961px) {
+    header{
+        padding: 35px 70px;
+    }
+
+    section{
+        padding: 50px 60px ;
+    }
+    .content{
+        margin: 60px 55px;
+    }
+    .main-2 div .card{
+        padding: 10px 10px;
+        height: 70px;
+        width: 250px;
+        background-color: #1a1a1a;  
+    }
+    body{
+        font-size: 20px;
+    }
+    .content{
+        align-items: center;
+        justify-content: center;
+    }
+    .main{
+        
+        background-image: url(img/gsmarena_006.jpg);
+    }
+    .main span{
+        margin-bottom: 70px;
+    }
+    iframe{
+        margin-bottom: 20px;
+        margin-left: 55px;
+        width: 450px;
+        height: 150px;
+    }
+    .main-4 .content ol li{
+        padding-top: 10px;
+        width: 700px;
+        height: 70px;
+        margin: 20px 30px;
+    }
+    .main .btn{
+        width: 330px;
+        height: 66px;
+        font-size: 1.2em;
+    }
+}
+@media (max-width:661px) {
+    header{
+        padding: 30px 50px;
+    }
+
+    section{
+        padding: 50px 60px ;
+    }
+    .content{
+        margin: 60px 55px;
+    }
+    .main-2 div .card{
+        padding: 10px 30px;
+        height: 50px;
+        width: 200px;
+        background-color: #1a1a1a;  
+    }
+    body{
+        font-size: 14px;
+    }
+    .content{
+        align-items: center;
+        justify-content: center;
+    }
+    .main{
+        font-size: 10px;
+        background-image: url(img/gsmarena_006.jpg);
+    }
+    .main span{
+        margin-bottom: 70px;
+    }
+    iframe{
+        width: 140px;
+        height: 100px;
+    }
+    .main-4 .content ol li{
+        padding-top: 5px;
+        width: 450px;
+        height: 50px;
+        margin: 20px 30px;
+    }
+    .main .btn{
+        padding-bottom: 30px;
+        width: 180px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+}
+@media (max-width:440px) {
+    header{
+        padding: 10px 20px;
+    }
+
+    section{
+        padding: 100px 20px ;
+    }
+    .content{
+        margin: 25px 30px;
+    }
+    .main-2 div .card{
+        padding: 0 30px;
+        height: 40px;
+        min-width: 280px;
+        background-color: #1a1a1a;  
+    }
+    body{
+        font-size: 8px;
+    }
+    .main-4 .content ol li{
+       
+        width: 300px;
+        height: 50px;
+        
+    }
+    
+    .content{
+        align-items: center;
+        justify-content: center;
+    }
+    .main{
+        background-image: url(img/gsmarena_006.jpg);
+    }
+    iframe{
+
+        width: 200px;
+        height: 70px;
+    }
+}
