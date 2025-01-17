@@ -5,6 +5,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 header{
     background-color: #1a1a1a;
